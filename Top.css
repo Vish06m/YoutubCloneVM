@@ -1,0 +1,183 @@
+
+.header{
+    height:55px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    background-color: white;
+    position: fixed;
+    z-index:100;
+}   
+
+.left-section{
+    display:flex;
+    align-items:center;
+}
+.threeline{
+    height: 24px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.youtubelogo{
+    height:21.5px;
+    margin-right:10px;
+}
+.middle-section{
+    flex:1;
+    margin-left:70px;
+    margin-right:35px;
+    max-width:600px;
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+}
+.Searchbar{
+    height:30px;
+    flex: 1;
+    padding-left:10px;
+    font-size: 16px;
+    border-width:1px;
+    border-style:solid;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.Searchbar::placeholder{
+    font-family: roboto,arial;
+    font-size:16px;
+}
+.Searchbar:hover{
+    
+    border-color:darkblue;
+ }
+.Search-button {
+    height:35px;
+    width:46px;
+    background-color:rgb(240, 240, 240);
+    border-width:2px;
+    border-style:solid;
+    border-color:rgb(192, 192, 192);
+    margin-left:-1px;
+    margin-right:10px;
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Voicebutton{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    border-radius:18px;
+}
+
+.Search-button .tooltip,.Voicebutton .tooltip{
+   position:absolute;
+   background-color:darkgray;
+   color:white;
+   padding-top:4px;
+   padding-bottom:4px;
+   padding-right:8px;
+   padding-left:8px;
+   border-radius:2px;
+   font-family: Roboto,Arail;
+   opacity:0;
+   bottom: -30px;
+   left:-5px;
+
+   pointer-events: none; 
+   white-space: nowrap;
+}
+
+.Search-button:hover .tooltip,.Voicebutton:hover .tooltip{
+    position:absolute;
+    background-color:darkgray;
+    color:white;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-right:8px;
+    padding-left:8px;
+    border-radius:2px;
+    font-family: Roboto,Arail;
+    opacity:1;
+ }
+
+.Voicebutton{
+    border:solid;
+    border-width:1px;
+    height:33px;
+    width:33px;
+    background-color:rgb(240, 240, 240);
+    border-width:2px;
+    border-style:solid;
+    border-color:rgb(192, 192, 192);
+    margin-left:-1px;
+    margin-right:10px;
+    position:relative;
+}
+
+.Voicebutton img{
+    height:21px;
+}
+
+.Voicebutton:active{
+    box-shadow: 5px 3px 5px rgba(0, 0, 0,  0.10);
+}
+.right-section{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 180px;
+    flex-shrink: 0;
+}
+
+
+.subscription{
+    height: 30px;
+    margin-right:10px;
+}
+
+.ytapps{
+    height: 27px;
+}
+
+.notifications{
+    height: 27px;
+}
+
+.acountpp{
+    height:30px;
+    border-radius: 15px;
+    
+}
+
+.button-icon-threeline{
+    background-color: white;
+    border:none;
+    padding:3px;
+}
+.button-icon-threeline:hover{
+    opacity:0.5;
+}
+.button-icon-threeline:active{
+    padding-top:5px;    
+}
+
+.button-icon-yt{
+    background-color: white;
+    border:none;
+    padding:3px;
+    transition: opacity 0.15s;
+}
+.button-icon-yt:hover{
+    opacity:0.8;
+}
+.button-icon-yt:active{
+    opacity:0.3;
+    padding-top:5px;    
+}
